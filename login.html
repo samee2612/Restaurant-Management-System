@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+<style>
+body {font-family: Arial, Helvetica, sans-serif ;background-image: url("images/login.jpg");opacity: .9;
+}
+
+
+/* Full-width input fields */
+input[type=email], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid orangered;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: orangered;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 20%;
+  border-radius: 50%;
+}
+
+.container123 {
+  padding: 16px;
+  color: orangered;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid orangered;
+  width:50%; /* Could be more or less, depending on screen size */
+  
+}
+
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  } 
+  
+}
+
+@media screen and (max-width: 650px) {
+    .modal-content{
+        width:80%;
+    }
+}
+
+</style>
+    
+</head>
+<body>
+<!--navbar-->
+<div class="topnav" id="myTopnav">
+  <img src="images/icon.png">
+  <a href="login.html">Sign In</a>
+    <a href="contact.html">Contact Us</a>
+    <a href="blog.html">Blog</a>
+    <a href="menu.html">Menu</a>
+    <a href="index.html">About</a>
+    <a href="index.html" class="active">Home</a>
+    <a href="javascript:void(0);" style="font-size:20px;" class="icon" onclick="myFunction()">&#9776;</a>
+  </div>
+ <!--Login-->
+<br>
+<br>
+      <form class="modal-content animate" action="login.html" method="post">
+          <br>
+
+        <div class="imgcontainer">
+     <br>
+   
+          <img src="images/img_avatar2.png" alt="Avatar" class="avatar">
+        </div>
+    
+        <div class="container123">
+          <label for="email"><b>Email ID</b></label>
+          <input type="email" placeholder="Enter email" name="email" required>
+    
+          <label for="psw"><b>Password</b></label><br>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+      
+          <button type="submit">Login</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          <br>
+          <br>
+        </div>
+    
+        <div class="container123" style="background-color:#f1f1f1">
+         <span class="psw"> Don't have an account yet?<a href="register.html" style="color: dodgerblue;"> Create an account</a></span>
+         <span class="psw" style="float: left;">Forgot <a href="#" style="color: dodgerblue;">password?</a></span><br>
+          <br>
+          
+        </div>
+      </form>
+   
+
+<!-------------------------------------footer-------------------------------------->
+<div class="footer">
+    <div class="container12">
+        <div class="row12">
+            <div class="footer-col-1">
+                <h3 style="font-size: medium;opacity:0.8"><br>Download Our App</h3>
+                <p >Download our app for android as well as ios</p>
+                <div class="app-logo">
+                    <img src="images/play.png" alt="">
+                    <img src="images/ios.png" alt="">
+                </div>
+            </div>
+         
+            <div class="footer-col-2">
+              
+                <h3><label class="logo"><br>John's Restaurant Boulder </label></h3>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            </div>
+            <div class="footer-col-3">
+                <h3 style="font-size: medium;opacity:0.8"><br>Ut efdtv ad</h3>
+                <ul  style="opacity:0.8">
+                    <li >Blogs</a></li>
+                    <li >Join us</li>
+                    <li >Discount coupons</li></a>
+                    <li >Refund policy</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3 style="font-size: medium;opacity:0.8" ><br><br>You can follow us on</h3>
+                <ul style="opacity:0.8">
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>Facebook</li>
+                    <li>youtube</li>
+                </ul>
+            </div>
+        </div>
+        
+        <hr>
+            <p class="copyright"><br><br>Project By Sameeksha Rane</p><br>
+           
+    </div>
+</div>
+    
+
+
+
+</body>
+</html>
