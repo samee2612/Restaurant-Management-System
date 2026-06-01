@@ -1,4 +1,4 @@
-# Restaurant Website Frontend
+# Restaurant Management System
 
 This is a responsive restaurant website frontend built using HTML, CSS, JavaScript, and Bootstrap. The project includes pages for home, menu, blog, contact, login, and registration. It is designed as a static restaurant management/restaurant website interface.
 
